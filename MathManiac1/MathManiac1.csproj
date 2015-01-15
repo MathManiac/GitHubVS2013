@@ -166,6 +166,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Assets\andengrads.png" />
+    <Content Include="Assets\Baggrund.png" />
     <Content Include="Assets\def_diff.PNG" />
     <Content Include="Assets\denrettelinieword.gif.png" />
     <Content Include="Assets\ekspon.png" />
