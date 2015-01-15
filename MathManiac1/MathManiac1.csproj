@@ -262,7 +262,9 @@
     <Content Include="Masterpages\Site.Master" />
     <Content Include="Tasks\index.aspx" />
     <Content Include="Tasks\nulpunktsformlen.aspx" />
+    <Content Include="Tasks\simpelequation.aspx" />
     <Content Include="Tasks\topunkteksp.aspx" />
+    <Content Include="Tasks\topunktpotens.aspx" />
     <Content Include="Tasks\topunktret.aspx" />
     <Content Include="Videoer\index.aspx" />
     <Content Include="Videoer\videoer.aspx" />
@@ -654,12 +656,26 @@
     <Compile Include="Tasks\nulpunktsformlen.aspx.designer.cs">
       <DependentUpon>nulpunktsformlen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Tasks\simpelequation.aspx.cs">
+      <DependentUpon>simpelequation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\simpelequation.aspx.designer.cs">
+      <DependentUpon>simpelequation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tasks\topunkteksp.aspx.cs">
       <DependentUpon>topunkteksp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tasks\topunkteksp.aspx.designer.cs">
       <DependentUpon>topunkteksp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\topunktpotens.aspx.cs">
+      <DependentUpon>topunktpotens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\topunktpotens.aspx.designer.cs">
+      <DependentUpon>topunktpotens.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tasks\topunktret.aspx.cs">
       <DependentUpon>topunktret.aspx</DependentUpon>

@@ -5,17 +5,11 @@
         <div class="row clearfix">
             <div class="col-md-3 column">
                 <ul class="nav nav-tabs nav-stacked">
-                    <li class="dropdown pull-right">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Opgaver<strong class="caret"></strong></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../Tasks/nulpunktsformlen.aspx">Nulpunktsformlen</a></li>
-                            <li><a href="../Tasks/topunktret.aspx">Den rette linie, to punkter</a></li>
-                            <li><a href="../Tasks/topunkteksp.aspx">Eksponentielfunktionen, to punkter</a></li>
-                            <li><a href="../Formelsamling/andengrads.aspx">Andengradsfunktionen</a></li>
-                            <li><a href="../Formelsamling/animering.aspx">Animeret Andengrasfunktion</a></li>
-                            <li><a href="../Formelsamling/funktionsanalyse.aspx">Funktionsanalyse</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../Tasks/nulpunktsformlen.aspx">Nulpunktsformlen</a></li>
+                    <li><a href="../Tasks/topunktret.aspx">Den rette linie, to punkter</a></li>
+                    <li><a href="../Tasks/topunkteksp.aspx">Eksponentielfunktionen, to punkter</a></li>
+                    <li><a href="../Tasks/topunktpotens.aspx">Potensfunktionen, to punkter</a></li>
+                    <li><a href="../Tasks/simpelequation.aspx">Simpel ligningsløsning</a></li>
                 </ul>
             </div>
             <div class="col-md-9 column">
@@ -26,5 +20,5 @@
             </div>
         </div>
     </div>
-    
+
 </asp:Content>

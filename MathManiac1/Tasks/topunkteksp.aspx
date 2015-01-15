@@ -36,8 +36,6 @@
      
         var bValue = +document.getElementById('<%=bvalue.ClientID%>').value;
 
-        alert(aValue);
-
         var board = JXG.JSXGraph.initBoard('<%=box.ClientID%>', { boundingbox: [-10, 10, 10, -10], axis: true });
             board.create('functiongraph', [function (x) { return (bValue) * (Math.pow(aValue, x)); }]);
     </script>

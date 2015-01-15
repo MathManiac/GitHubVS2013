@@ -228,7 +228,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; voksende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; aftagende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]-\infty;" + visttopy.ToString() + @"[";
+                vm.Text = @"f(x) \; har \; Vm(f) \in ]-\infty;" + visttopy.ToString() + @"]";
             }
             if(vista > 0 && vistd > 0)
             {
@@ -239,7 +239,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; aftagende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; voksende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]" + visttopy.ToString() + @";\infty[";
+                vm.Text = @"f(x) \; har \; Vm(f) \in [" + visttopy.ToString() + @";\infty[";
             }
             if (vista > 0 && vistd < 0)
             {
@@ -250,7 +250,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; aftagende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; voksende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]"  + visttopy.ToString() + @";\infty[";
+                vm.Text = @"f(x) \; har \; Vm(f) \in ["  + visttopy.ToString() + @";\infty[";
             }
             if (vista < 0 && vistd < 0)
             {
@@ -261,7 +261,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; voksende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; aftagende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]-\infty ;" + visttopy.ToString() + "[";
+                vm.Text = @"f(x) \; har \; Vm(f) \in ]-\infty ;" + visttopy.ToString() + "]";
             }
             if (vista > 0 && vistd == 0)
             {
@@ -272,7 +272,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; aftagende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; voksende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]" + visttopy.ToString() + @";\infty";
+                vm.Text = @"f(x) \; har \; Vm(f) \in [" + visttopy.ToString() + @";\infty";
             }
             if (vista < 0 && vistd == 0)
             {
@@ -283,7 +283,7 @@ namespace MathManiac1.Tasks
                 tp.Text = @"f(x) \; har \; ekstrema \; i \; punktet \; : (" + visttopx.ToString() + ";" + visttopy.ToString() + ")";
                 monotoniet.Text = @"f(x) \; er \; voksende \; for \; x\in ]-\infty;" + visttopx.ToString() + @"[";
                 monotonito.Text = @"f(x) \; er \; \; aftagende \; for \; x\in ]" + visttopx.ToString() + @";\infty[";
-                vm.Text = @"f(x) \; har \; Vm(f) \in ]\-infty ;" + visttopy.ToString() + "[";
+                vm.Text = @"f(x) \; har \; Vm(f) \in ]\-infty ;" + visttopy.ToString() + "]";
             }
         }
     }
