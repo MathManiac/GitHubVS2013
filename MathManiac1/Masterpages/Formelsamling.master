@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Masterpages/Site.Master" AutoEventWireup="true" CodeBehind="Formelsamling.master.cs" Inherits="MathManiac1.Masterpages.Formelsamling" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="../styles/DropDown.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.accordion-content').not(':first').hide();
+
+            $('.accordion-content:first').show();
+            $('.accordion-header:first').addClass('header-active');
+            $('.accordion-header:first').find('span').addClass('icon-active');
+
+            $('.accordion-header').click(function () {
+                $('.accordion-content:visible').slideUp('slow').prev().removeClass('header-active');
+                $('.icon-active:visible').removeClass('icon-active');
+                $(this).addClass('header-active').next().slideDown('slow');
+                $(this).find('span').addClass('icon-active');
+            });
+
+        });
+    </script>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-3 column">
+                <!--<ul class="nav nav-tabs nav-stacked">
+                    <li class="dropdown pull-right">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Funktioner<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Formelsamling/rettelinier.aspx">Den rette linie</a></li>
+                            <li><a href="../Formelsamling/eksponentielen.aspx">Eksponentielfunktionen</a></li>
+                            <li><a href="../Formelsamling/potensfunktioner.aspx">Potensfunktioner</a></li>
+                            <li><a href="../Formelsamling/andengrads.aspx">Andengradsfunktionen</a></li>
+                            <li><a href="../Formelsamling/animering.aspx">Animeret Andengrasfunktion</a></li>
+                            <li><a href="../Formelsamling/funktionsanalyse.aspx">Funktionsanalyse</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown pull-right">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Rentesregning<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Formelsamling/rettelinier.aspx">Den rette linie</a></li>
+                            <li><a href="../Formelsamling/eksponentielen.aspx">Eksponentielfunktionen</a></li>
+                            <li><a href="../Formelsamling/potensfunktioner.aspx">Potensfunktioner</a></li>
+                            <li><a href="../Formelsamling/andengrads.aspx">Andengradsfunktionen</a></li>
+                            <li><a href="../Formelsamling/animering.aspx">Animeret Andengrasfunktion</a></li>
+                            <li><a href="../Formelsamling/funktionsanalyse.aspx">Funktionsanalyse</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+                <div id="accordion">
+                    <div class="accordion-header">
+                        <h3>Funktioner</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/rettelinier.aspx">Den rette linie</a></li>
+                        <li><a href="../Formelsamling/eksponentielen.aspx">Eksponentielfunktionen</a></li>
+                        <li><a href="../Formelsamling/potensfunktioner.aspx">Potensfunktionen</a></li>
+                        <li><a href="../Formelsamling/andengrads.aspx">Andengradsfunktionen</a></li>
+                        <li><a href="../Formelsamling/animering.aspx">Animeret Andengrasfunktion</a></li>
+                        <li><a href="../Formelsamling/funktionsanalyse.aspx">Funktionsanalyse</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Rentesregning</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/fremskrivningen.aspx">Fremskrivningsformlen</a></li>
+                        <li><a href="../Formelsamling/opsparingsformlen.aspx">Opsparingsformlen</a></li>
+                        <li><a href="../Formelsamling/geldsformlen.aspx">Gældsformlen</a></li>
+                        <li><a href="../Formelsamling/restgeldsformlen.aspx">Restgældsformlen</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Statistik</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/diskretevariable.aspx">Diskrete variable</a></li>
+                        <li><a href="../Formelsamling/kontinuertevariable.aspx">Kontinuerte variable</a></li>
+                        <li><a href="../Formelsamling/binomialfordeling.aspx">Binomialfordelingen</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Differentialregning</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/definitiondiff.aspx">Definition</a></li>
+                        <li><a href="../Formelsamling/regnereglerdiff.aspx">Regneregler</a></li>
+                        <li><a href='../Formelsamling/tangentdiff.aspx'>Tangentligningen</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Integralregning</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/intproven.aspx">Integrationsprøven</a></li>
+                        <li><a href="../Formelsamling/regnereglerubestint.aspx">Regneregler, ubestemt integrale</a></li>
+                        <li><a href="../Formelsamling/regnereglerbestemtint.aspx">Regneregler, bestemt integral</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Beviser</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/bevisproduktform.aspx">Bevis, produktformen</a></li>
+                        <li><a href="../Formelsamling/bevisretlinietopunkter.aspx">Bevis, to punkter til den rette linie.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 column">
+                <div class="row clearfix">
+                    <asp:ContentPlaceHolder ID="Main" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

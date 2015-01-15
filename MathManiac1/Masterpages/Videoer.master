@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Masterpages/Site.Master" AutoEventWireup="true" CodeBehind="Videoer.master.cs" Inherits="MathManiac1.Masterpages.Videoer" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-3 column">
+               
+            </div>
+            <div class="col-md-9 column">
+                <div class="row clearfix">
+                    <asp:ContentPlaceHolder ID="Main" runat="server">
+                      
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
