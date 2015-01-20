@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace MathManiac1.Tasks
 {
     public partial class simpelequation : System.Web.UI.Page

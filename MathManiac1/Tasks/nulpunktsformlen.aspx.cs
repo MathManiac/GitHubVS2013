@@ -19,7 +19,7 @@ namespace MathManiac1.Tasks
         {
             //placere tilfældige tal for a,b og c i et andengradspolynomium
 
-            int newa = rnd.Next(1, 19) + 1; if (newa > 9) newa -= 20;
+            int newa = rnd.Next(1, 3) + 1; if (newa > 9) newa -= 3;
             int newb = rnd.Next(1, 19) + 1; if (newb > 9) newb -= 20;
             int newc = rnd.Next(1, 19) + 1; if (newc > 9) newc -= 20;
 

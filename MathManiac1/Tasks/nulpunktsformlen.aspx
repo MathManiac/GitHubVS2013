@@ -32,7 +32,7 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <td>
-                    <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" />
+                     <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" />                   
                 </td>
                 <td>
                     <div style="margin: 30px">
@@ -175,4 +175,11 @@
 
         </script>
     </div>
+      <script type="text/javascript">
+          function myJsFunction() {
+              var text = +document.getElementById('<%=newtasksolutionone.ClientID%>').value;
+             
+              alert(text);
+          }
+                    </script>
 </asp:Content>

@@ -33,8 +33,8 @@
 
         <script type="text/javascript">
 
-            var aValue = +document.getElementById('<%=avalue.ClientID%>').value;
-            var bValue = +document.getElementById('<%=bvalue.ClientID%>').value;
+            var aValue = +document.getElementById('<%=avalue.ClientID%>').value.replace(",", ".");
+            var bValue = +document.getElementById('<%=bvalue.ClientID%>').value.replace(",", ".");
 
 
             var board = JXG.JSXGraph.initBoard('<%=box.ClientID%>', { boundingbox: [-10, 10, 10, -10], axis: true });

@@ -9,7 +9,7 @@
     <div style="margin: 30px">
         <asp:HiddenField ID="CurrentTask" runat="server" />
 
-        <asp:HiddenField ID="avalue" runat="server" ClientIDMode="Static" Value="hidden value" />
+        <asp:HiddenField ID="avalue" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="bvalue" runat="server" ClientIDMode="Static" />
 
         <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Ny opgave" OnClick="newTasks_Click" />
@@ -31,10 +31,10 @@
     <div id="box" class="jxgbox" style="width: 300px; height: 300px;" runat="server" visible="false"></div>
 
     <script type="text/javascript">
-
-        var aValue = +document.getElementById('<%=avalue.ClientID%>').value;
+        
+        var aValue = +document.getElementById('<%=avalue.ClientID%>').value.replace(",", "."); 
+        var bValue = +document.getElementById('<%=bvalue.ClientID%>').value.replace(",", ".");
      
-        var bValue = +document.getElementById('<%=bvalue.ClientID%>').value;
 
         var board = JXG.JSXGraph.initBoard('<%=box.ClientID%>', { boundingbox: [-10, 10, 10, -10], axis: true });
             board.create('functiongraph', [function (x) { return (bValue) * (Math.pow(aValue, x)); }]);

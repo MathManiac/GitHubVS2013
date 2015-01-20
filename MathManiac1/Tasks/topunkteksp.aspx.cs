@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 
 namespace MathManiac1.Tasks
 {
     public partial class topunkteksp : System.Web.UI.Page
     {
+
         Random rnd = new Random();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         public void newTasks_Click(object sender, EventArgs e)
@@ -77,6 +79,7 @@ namespace MathManiac1.Tasks
                 double xere = Math.Round((1 / (vistc - vista)), 3);
 
                 double a = Math.Round((Math.Pow(yere, xere)), 3);
+             
                 double b = Math.Round((vistb / (Math.Pow(a, vista))), 2);
 
                 slope.Text = "a=" + a.ToString();
@@ -98,10 +101,10 @@ namespace MathManiac1.Tasks
                     forskrift.Text = shownb;
                 }
 
-                avalue.Value = string.Format("{0}", a);
-                bvalue.Value = string.Format("{0}", b);
-
                 
+
+                avalue.Value = string.Format("{0}",a);
+                bvalue.Value = string.Format("{0}",b);             
             }
 
             box.Visible = true;
