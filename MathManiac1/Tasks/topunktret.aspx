@@ -2,8 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
     <div style="margin: 30px">
-        Der er ikke meget interaktion på denne side, skriv dit svar på et stykke papir, og klik på løsningen for at kontrollere.<br />
-        Du kan godt have formalsamlingen åben samtidige med opgavestilleren.<br />
+     
         Med udgangspunkt i to punkter som begge ligger på den rette linie, skal du finde forskriften for den rette linie.<br />
     </div>
     <div style="margin: 30px">
@@ -18,21 +17,33 @@
     </div>
 
     <div style="margin: 30px">
-        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" />
+        <p>Skriv a med to decimaler, husk at afrunde rigtigt.</p>
+        <asp:TextBox type="double" ID="studentSolution_a" class="form-control" placeholder="Din løsning" aria-describedby="basic-addon1" runat="server" Width="130px" onkeydown="return (event.keyCode!=13);"></asp:TextBox>
+        <br />
+        <p>Skriv b med to decimaler, husk at afrunde rigtigt.</p>
+        <asp:TextBox type="double" ID="studentSolution_b" class="form-control" placeholder="Din løsning" aria-describedby="basic-addon1" runat="server" Width="130px" onkeydown="return (event.keyCode!=13);"></asp:TextBox>
+        <br />
 
-        $$<asp:Literal ID="newtaskkoefficienter" runat="server" />$$
-            $$<asp:Literal ID="slope" runat="server" />$$
-            $$<asp:Literal ID="croosYaxis" runat="server" />$$
-            $$<asp:Literal ID="forskrift" runat="server" />$$
-            $$<asp:Literal ID="ekstrema" runat="server" />$$      
+        <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" /><br /><br />
+        <p>Nedstående kan du se din funktion samlet</p><br />
 
+        <asp:Label ID="rosellerris_a" runat="server" AutoEventWireup="true" /><br />
+        <asp:Label ID="rosellerris_b" runat="server" AutoEventWireup="true" /><br />
+        <asp:Label ID="svar" runat="server"  /><br />
+         <asp:HiddenField ID="counterbackup" runat="server" />
+        $$<asp:Literal ID="newtaskkoefficienter" runat="server" Visible="false"/>$$
+            $$<asp:Literal ID="slope" runat="server" Visible="false"/>$$
+            $$<asp:Literal ID="croosYaxis" runat="server" Visible="false" />$$
+            $$<asp:Literal ID="forskrift" runat="server" Visible="false" />$$
+            $$<asp:Literal ID="ekstrema" runat="server" Visible="false" />$$      
+        
     </div>
 
     <div id="box" class="jxgbox" style="width: 300px; height: 300px;" runat="server" visible="false"></div>
     <script type="text/javascript">
 
-        var aValue = +document.getElementById('<%=avalue.ClientID%>').value;
-        var bValue = +document.getElementById('<%=bvalue.ClientID%>').value;
+        var aValue = +document.getElementById('<%=avalue.ClientID%>').value.replace(",", ".");
+        var bValue = +document.getElementById('<%=bvalue.ClientID%>').value.replace(",", ".");
 
 
         var board = JXG.JSXGraph.initBoard('<%=box.ClientID%>', { boundingbox: [-10, 10, 10, -10], axis: true });

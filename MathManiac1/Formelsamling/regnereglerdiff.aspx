@@ -90,8 +90,8 @@
                     $$h(x)=f(x) \cdot g(x)$$
                             </td>
                             <td>$$h'(x)=f'(x)\cdot g(x) + f(x)\cdot g'(x)$$
-                                Bevis
-                                <a href="../Formelsamling/Beviser/produktformen.aspx" onclick="window.open(this.href, 'child', 'scrollbars,width=850,height=800'); return false">Produktformen</a>
+                              <!--  Bevis
+                                <a href="../Formelsamling/bevisproduktformen.aspx" onclick="window.open(this.href, 'child', 'scrollbars,width=850,height=800'); return false">Produktformen</a>-->
                             </td>
                             <td>$$h(x)=x^2\cdot 4x$$
                     $$h'(x)=2x\cdot 4x + x^2\cdot 4$$

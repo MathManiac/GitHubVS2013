@@ -20,7 +20,7 @@
                                         til den rette linie, der tangere punktet. Det smarte ligger i at man netop ved et ekstrema har hældningskoefficienten lig nul.
                                         Da tangenten netop her er vandret.<br />
                                 For en funktion f(x) er den afledte f'(x) defineret som følger:
-                                        $$f'(x)=\lim_{x \rightarrow 0} {{f(x + \Delta x)-f(x)} \over {\Delta x}}$$
+                                        $$f'(x)=\lim_{\Delta x \rightarrow 0} {{f(x + \Delta x)-f(x)} \over {\Delta x}}$$
                             </td>
                             <td class="warning">Vi har to punkter på den rette linie og bruger formlen<br />
                                 $$A(2;7)\;og\;B(5;13)$$ 

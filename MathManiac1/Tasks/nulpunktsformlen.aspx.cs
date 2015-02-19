@@ -19,7 +19,7 @@ namespace MathManiac1.Tasks
         {
             //placere tilfældige tal for a,b og c i et andengradspolynomium
 
-            int newa = rnd.Next(1, 3) + 1; if (newa > 9) newa -= 3;
+            int newa = rnd.Next(1, 6) + 1; if (newa > 3) newa -= 7;
             int newb = rnd.Next(1, 19) + 1; if (newb > 9) newb -= 20;
             int newc = rnd.Next(1, 19) + 1; if (newc > 9) newc -= 20;
 
@@ -126,7 +126,6 @@ namespace MathManiac1.Tasks
 
             newtaskkoefficienter.Text = "a=" + vista.ToString() + " , " + "b=" + vistb.ToString() + " , " + "c=" + vistc.ToString();
             
-
             double dommy = -1;
             
             double d = vistb * vistb - 4 * vista * vistc;
@@ -286,5 +285,7 @@ namespace MathManiac1.Tasks
                 vm.Text = @"f(x) \; har \; Vm(f) \in ]\-infty ;" + visttopy.ToString() + "]";
             }
         }
+
+       
     }
 }

@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                 </ul>-->
-                <div id="accordion">
+                <div id="accordion" >
                     <div class="accordion-header">
                         <h3>Funktioner</h3>
                         <span></span>
@@ -58,7 +58,7 @@
                         <li><a href="../Formelsamling/eksponentielen.aspx">Eksponentielfunktionen</a></li>
                         <li><a href="../Formelsamling/potensfunktioner.aspx">Potensfunktionen</a></li>
                         <li><a href="../Formelsamling/andengrads.aspx">Andengradsfunktionen</a></li>
-                        <li><a href="../Formelsamling/animering.aspx">Animeret Andengrasfunktion</a></li>
+                        <li><a href="../Formelsamling/animering.aspx">Animeret andengradsfunktion</a></li>
                         <li><a href="../Formelsamling/funktionsanalyse.aspx">Funktionsanalyse</a></li>
                     </ul>
                     <div class="accordion-header">
@@ -105,6 +105,13 @@
                     <ul class="accordion-content">
                         <li><a href="../Formelsamling/bevisproduktform.aspx">Bevis, produktformen</a></li>
                         <li><a href="../Formelsamling/bevisretlinietopunkter.aspx">Bevis, to punkter til den rette linie.</a></li>
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Større eksempler</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
+                        <li><a href="../Formelsamling/Modellering_Eksempel.aspx">Modellering</a></li>
                     </ul>
                 </div>
             </div>

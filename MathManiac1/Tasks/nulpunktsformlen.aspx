@@ -32,7 +32,11 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <td>
-                     <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" />                   
+                    //<asp:TextBox type="number" ID="studentSolutionX_1" class="form-control" placeholder="Din løsning" aria-describedby="basic-addon1" runat="server" Width="130px" onkeydown="return (event.keyCode!=13);"></asp:TextBox>
+                    //<asp:TextBox type="number" ID="studentSolutionX_2" class="form-control" placeholder="Din løsning" aria-describedby="basic-addon1" runat="server" Width="130px" onkeydown="return (event.keyCode!=13);"></asp:TextBox>
+
+
+                    <asp:Button CssClass="btn btn-primary" ID="Button2" runat="server" Text="Løsning" OnClick="newTasksSolution_Click" />
                 </td>
                 <td>
                     <div style="margin: 30px">
@@ -139,12 +143,9 @@
                 axes.scale = 10;                 // 40 pixels from x=0 to x=1
                 axes.doNegativeX = true;
 
-
                 showAxes(ctx, axes);
                 funGraph(ctx, axes, fun1, "rgb(11,153,11)", 1);
-
             }
-
             function funGraph(ctx, axes, func, color, thick) {
                 var xx, yy, dx = 4, x0 = axes.x0, y0 = axes.y0, scale = axes.scale;
                 var iMax = Math.round((ctx.canvas.width - x0) / dx);
@@ -170,16 +171,8 @@
                 ctx.moveTo(xmin, y0); ctx.lineTo(w, y0);  // X axis
                 ctx.moveTo(x0, 0); ctx.lineTo(x0, h);  // Y axis
                 ctx.stroke();
-
             }
-
         </script>
     </div>
-      <script type="text/javascript">
-          function myJsFunction() {
-              var text = +document.getElementById('<%=newtasksolutionone.ClientID%>').value;
-             
-              alert(text);
-          }
-                    </script>
+
 </asp:Content>

@@ -40,6 +40,15 @@ namespace MathManiac1.Tasks {
         protected global::System.Web.UI.WebControls.Literal newTask;
         
         /// <summary>
+        /// studentSolution control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox studentSolution;
+        
+        /// <summary>
         /// Button2 control.
         /// </summary>
         /// <remarks>
@@ -56,5 +65,23 @@ namespace MathManiac1.Tasks {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal newtaskkoefficienter;
+        
+        /// <summary>
+        /// rosellerris control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label rosellerris;
+        
+        /// <summary>
+        /// counterbackup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField counterbackup;
     }
 }

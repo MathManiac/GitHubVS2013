@@ -44,10 +44,20 @@ namespace MathManiac1.Tasks
             forskrift.Text = "";
 
             box.Visible = false;
+            rosellerris_a.Text = "";
+            rosellerris_b.Text = "";
+            svar.Text = "";
+            studentSolution_a.BackColor = System.Drawing.ColorTranslator.FromHtml("");
+            studentSolution_b.BackColor = System.Drawing.ColorTranslator.FromHtml("");
         }
 
         public void newTasksSolution_Click(object sender, EventArgs e)
         {
+            bool svar_a;
+            bool svar_b;
+             int counter = 0;
+            var counterValues = counterbackup.Value.Split(new char[] { ';' });
+            int.TryParse(counterValues[0], out counter);
 
             var values = CurrentTask.Value.Split(new char[] { ';' });
 
@@ -86,6 +96,58 @@ namespace MathManiac1.Tasks
             bvalue.Value = string.Format("{0}", b);
 
             box.Visible = true;
+
+            var studentAnswer_a = studentSolution_a.Text;
+            double answer_a;
+            bool isNumerical_a = double.TryParse(studentAnswer_a, out answer_a);
+
+            var studentAnswer_b = studentSolution_b.Text;
+            double answer_b;
+            bool isNumerical_b = double.TryParse(studentAnswer_b, out answer_b);
+
+            if (answer_a == a)
+            {       
+                rosellerris_a.Text = "Godt arbejde, a er lig " + a.ToString();
+                studentSolution_a.BackColor = System.Drawing.ColorTranslator.FromHtml("#00FF00");
+                counterbackup.Value = string.Format("{0}", counter);
+                svar_a = true;
+            }
+            else
+            {
+                counter = 0;
+                counterbackup.Value = string.Format("{0}", counter);
+                rosellerris_a.Text = "Æv, a er forkert prøv igen, Se evt i formelsamlingen, eller grafen. Score = " + counter.ToString();
+                studentSolution_a.BackColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
+                svar_a = false;
+            }
+            studentSolution_a.Text = "";
+
+            if (answer_b == b)
+            {
+                rosellerris_b.Text = "Godt arbejde, b er lig " + b.ToString();
+                studentSolution_b.BackColor = System.Drawing.ColorTranslator.FromHtml("#00FF00");
+                counterbackup.Value = string.Format("{0}", counter);
+                svar_b = true;
+            }
+            else
+            {
+                counter = 0;
+                counterbackup.Value = string.Format("{0}", counter);
+                rosellerris_b.Text = "Æv, b er forkert prøv igen, se evt i formelsamlingen, eller grafen. Score = " + counter.ToString();
+                studentSolution_b.BackColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
+                svar_b = false;
+            }
+            if (svar_a && svar_b == true)
+            {
+                counter = counter + 1;
+                svar.Text = "Du er god, din score er " + counter.ToString();
+                forskrift.Visible = true;
+            }
+            if (counter == 10)
+            {
+                svar.Text = "Du har ti rigtige i træk. Mon ikke du har styr på det her?";
+            }
+            studentSolution_b.Text = "";
         }
     }
 }

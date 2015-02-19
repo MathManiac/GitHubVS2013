@@ -8,7 +8,7 @@
                 <div>
                     <ul class="nav nav-pills">
                         <li><a href="../Regneregler/brokregnereglerne.aspx">Brøkregnereglerne</a></li>
-                        <li><a href="../Regneregler/parantesregler.aspx">Parantesregnereglerne</a></li>
+                        <li><a href="../Regneregler/parantesregler.aspx">Parentesregnereglerne</a></li>
                         <li><a href="../Regneregler/potensrodregler.aspx">Potens- og rodregnereglerne</a></li>
                     </ul>
                 </div>
@@ -16,7 +16,7 @@
             <div class="col-md-9 column">
                 <div class="row clearfix">
                     <asp:ContentPlaceHolder ID="Main" runat="server">
-                        hej hvorfor er du ikke med
+                       
                     </asp:ContentPlaceHolder>
                 </div>
             </div>

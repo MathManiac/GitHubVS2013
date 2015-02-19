@@ -76,6 +76,24 @@ namespace MathManiac1.Tasks {
         protected global::System.Web.UI.WebControls.Literal test;
         
         /// <summary>
+        /// studentSolutionX_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox studentSolutionX_1;
+        
+        /// <summary>
+        /// studentSolutionX_2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox studentSolutionX_2;
+        
+        /// <summary>
         /// Button2 control.
         /// </summary>
         /// <remarks>

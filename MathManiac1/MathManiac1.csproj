@@ -170,12 +170,17 @@
     <Content Include="Assets\def_diff.PNG" />
     <Content Include="Assets\denrettelinieword.gif.png" />
     <Content Include="Assets\ekspon.png" />
+    <Content Include="Assets\Histogram.PNG" />
+    <Content Include="Assets\Modellering_omsætning.PNG" />
+    <Content Include="Assets\Modellering_overskud.PNG" />
+    <Content Include="Assets\Modellering_pris.PNG" />
     <Content Include="Assets\pindediagram.PNG" />
     <Content Include="Assets\potensfunktion.PNG" />
-    <Content Include="Assets\produktformen.PNG" />
+    <Content Include="Assets\produktformen.png" />
     <Content Include="Assets\sumkurve.PNG" />
     <Content Include="Assets\sumtegnfralatex.png" />
     <Content Include="Assets\tangentligning.PNG" />
+    <Content Include="Assets\trappediagram.PNG" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -199,6 +204,7 @@
     <Content Include="Formelsamling\index.aspx" />
     <Content Include="Formelsamling\intproven.aspx" />
     <Content Include="Formelsamling\kontinuertevariable.aspx" />
+    <Content Include="Formelsamling\Modellering_Eksempel.aspx" />
     <Content Include="Formelsamling\opsparingsformlen.aspx" />
     <Content Include="Formelsamling\potensfunktioner.aspx" />
     <Content Include="Formelsamling\regnereglerbestemtint.aspx" />
@@ -261,6 +267,7 @@
     <Content Include="Global.asax" />
     <Content Include="Masterpages\Site.Master" />
     <Content Include="Tasks\index.aspx" />
+    <Content Include="Tasks\modellering.aspx" />
     <Content Include="Tasks\nulpunktsformlen.aspx" />
     <Content Include="Tasks\simpelequation.aspx" />
     <Content Include="Tasks\topunkteksp.aspx" />
@@ -510,6 +517,13 @@
     <Compile Include="Formelsamling\kontinuertevariable.aspx.designer.cs">
       <DependentUpon>kontinuertevariable.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Formelsamling\Modellering_Eksempel.aspx.cs">
+      <DependentUpon>Modellering_Eksempel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formelsamling\Modellering_Eksempel.aspx.designer.cs">
+      <DependentUpon>Modellering_Eksempel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Formelsamling\opsparingsformlen.aspx.cs">
       <DependentUpon>opsparingsformlen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -648,6 +662,13 @@
     </Compile>
     <Compile Include="Tasks\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\modellering.aspx.cs">
+      <DependentUpon>modellering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tasks\modellering.aspx.designer.cs">
+      <DependentUpon>modellering.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tasks\nulpunktsformlen.aspx.cs">
       <DependentUpon>nulpunktsformlen.aspx</DependentUpon>
