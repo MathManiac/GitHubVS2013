@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MathManiac1.Regneregler
+namespace MathManiac1.Formelsamling
 {
-    public partial class parantesregler : System.Web.UI.Page
+    public partial class beviser_introduktion : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

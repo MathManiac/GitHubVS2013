@@ -8,7 +8,7 @@
                 <div>
                     <ul class="nav nav-pills">
                         <li><a href="../Regneregler/brokregnereglerne.aspx">Brøkregnereglerne</a></li>
-                        <li><a href="../Regneregler/parantesregler.aspx">Parentesregnereglerne</a></li>
+                        <li><a href="../Regneregler/parentesreglerne.aspx">Parentesregnereglerne</a></li>
                         <li><a href="../Regneregler/potensrodregler.aspx">Potens- og rodregnereglerne</a></li>
                     </ul>
                 </div>

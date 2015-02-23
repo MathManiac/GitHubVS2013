@@ -5,10 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-namespace MathManiac1.Masterpages
+namespace MathManiac1.Regneregler
 {
-    public partial class Formelsamling : System.Web.UI.MasterPage
+    public partial class parentesreglerne : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

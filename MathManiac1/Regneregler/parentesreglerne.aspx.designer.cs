@@ -11,7 +11,7 @@ namespace MathManiac1.Regneregler
 {
 
 
-    public partial class parantesregler
+    public partial class parentesreglerne
     {
     }
 }

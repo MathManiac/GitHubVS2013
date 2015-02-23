@@ -18,7 +18,7 @@
                 $(this).addClass('header-active').next().slideDown('slow');
                 $(this).find('span').addClass('icon-active');
             });
-
+           
         });
     </script>
     <div class="container">
@@ -72,12 +72,25 @@
                         <li><a href="../Formelsamling/restgeldsformlen.aspx">Restgældsformlen</a></li>
                     </ul>
                     <div class="accordion-header">
-                        <h3>Statistik</h3>
+                        <h3>Deskriptiv statistik</h3>
                         <span></span>
                     </div>
                     <ul class="accordion-content">
                         <li><a href="../Formelsamling/diskretevariable.aspx">Diskrete variable</a></li>
-                        <li><a href="../Formelsamling/kontinuertevariable.aspx">Kontinuerte variable</a></li>
+                        <li><a href="../Formelsamling/kontinuertevariable.aspx">Kontinuerte variable</a></li>          
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Statistik</h3>
+                        <span></span>
+                    </div>
+                      <ul class="accordion-content">
+                        <li><a href="../Formelsamling/konfidens.aspx">Konfidensintervaller</a></li>             
+                    </ul>
+                    <div class="accordion-header">
+                        <h3>Sandsynlighedsregning.</h3>
+                        <span></span>
+                    </div>
+                    <ul class="accordion-content">
                         <li><a href="../Formelsamling/binomialfordeling.aspx">Binomialfordelingen</a></li>
                     </ul>
                     <div class="accordion-header">
@@ -103,8 +116,10 @@
                         <span></span>
                     </div>
                     <ul class="accordion-content">
-                        <li><a href="../Formelsamling/bevisproduktform.aspx">Bevis, produktformen</a></li>
-                        <li><a href="../Formelsamling/bevisretlinietopunkter.aspx">Bevis, to punkter til den rette linie.</a></li>
+                        <li><a href="../Formelsamling/beviser_introduktion.aspx">Introduktion til beviser</a></li>
+                        <li><a href="../Formelsamling/bevisproduktform.aspx">Produktformen</a></li>
+                        <li><a href="../Formelsamling/bevis_nulpunktsformlen.aspx">Nulpunktsformlen.</a></li>
+                        <li><a href="../Formelsamling/bevisretlinietopunkter.aspx">To punkter til den rette linie.</a></li>                    
                     </ul>
                     <div class="accordion-header">
                         <h3>Større eksempler</h3>
